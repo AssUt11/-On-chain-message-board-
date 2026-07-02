@@ -1,0 +1,27 @@
+{
+  "name": "chain-message-board",
+  "version": "1.0.0",
+  "description": "A GitHub-ready Solidity + Hardhat 3 starter project: on-chain message board.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "test:solidity": "hardhat test solidity",
+    "deploy:local": "hardhat ignition deploy ignition/modules/MessageBoard.ts",
+    "deploy:sepolia": "hardhat ignition deploy ignition/modules/MessageBoard.ts --network sepolia",
+    "coverage": "hardhat coverage"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.1.7",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.7",
+    "@types/node": "^22.0.0",
+    "hardhat": "^3.9.0",
+    "typescript": "^5.8.0",
+    "viem": "^2.53.1"
+  }
+}
